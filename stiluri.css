@@ -1,0 +1,161 @@
+.main-container {
+    display: flex;
+    height: 1000vh;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+}
+
+.button {
+    background-color: rgb(60, 133, 182);
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+
+.left1 {
+    width: calc(100%/3);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: whitesmoke;
+    background-color: black;
+    row-gap: 140px;
+    padding-right: 30px;
+}
+
+.leftcard {
+    height: 100px;
+    width: 200px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.center {
+    width: calc(100%/3);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: whitesmoke;
+    background-color: black;
+    border: 2px solid gray;
+}
+
+.poza {
+    width: 400px;
+    height: 400px;
+}
+
+.centercard {
+
+    width: 100%;
+    border: 2px solid grey;
+    text-align: center;
+}
+
+.right1 {
+    width: calc(100%/3);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: whitesmoke;
+    background-color: black;
+    row-gap: 30px;
+    }
+
+.rightcard {
+    border: 3px solid rgb(218, 215, 215);
+    border-radius: 30px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.rightcard:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+
+ul li {
+    list-style-type: none;
+    font-size: 30px;
+    padding: 20px 0;
+
+}
+
+.linkleft {
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.button {
+    background-color: rgb(60, 133, 182);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+/*Media Querry part*/
+
+@media screen and (max-width:600px){
+    .main-container {
+      flex-direction: column;
+     
+    }
+
+
+    .left1{     
+        
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftcard{
+        margin-bottom: 20px;
+        width: 200px;
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 0;;
+    }
+    .center{
+        
+        width: auto;
+        height: auto;
+    }
+
+    .right{
+        
+        width: auto;
+        height: auto;
+        
+    }
+
+}
